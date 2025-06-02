@@ -2,7 +2,11 @@ import Navbar from "@/features/dashboard/components/Navbar";
 import Sidebar from "@/features/dashboard/components/sidebar/sidebar";
 import React from "react";
 
-const DashBoardLayout = ({ children }) => {
+const DashBoardLayout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   return (
     <div className="h-screen w-screen">
       <div className="flex h-full w-full">
